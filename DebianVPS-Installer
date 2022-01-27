@@ -86,6 +86,7 @@ function InstWebmin(){
  # You may change its webmin version depends on the link you've loaded in this variable(.deb file only, do not load .zip or .tar.gz file):
  wget http://prdownloads.sourceforge.net/webadmin/webmin_1.984_all.deb
  apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python unzip -y
+ apt --fix-broken install
  
  # Installing .deb package for webmin
  dpkg --install webmin_1.984_all.deb
