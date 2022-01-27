@@ -87,9 +87,9 @@ function InstWebmin(){
  wget http://prdownloads.sourceforge.net/webadmin/webmin_1.984_all.deb
  
  # Installing .deb package for webmin
- dpkg --install webmin*.deb
+ dpkg --install webmin_1.984_all.deb
  
- rm -rf webmin*.deb
+ rm -rf webmin_1.984_all.deb
  
  # Configuring webmin server config to use only http instead of https
  sed -i 's|ssl=1|ssl=0|g' /etc/webmin/miniserv.conf
